@@ -22,6 +22,8 @@ defaultDashboard:
     # Not deployed by this blueprint
     kibana:
       enabled: true
+    ollama:
+      enabled: true
     grafana:
       enabled: false
     prometheus:

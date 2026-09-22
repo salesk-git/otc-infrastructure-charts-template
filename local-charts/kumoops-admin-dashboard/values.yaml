@@ -56,6 +56,13 @@ defaultDashboard:
       imgAlt: "GitLab"
       category: "DevOps"
       description: "DevOps platform for Git repositories and CI/CD"
+    ollama:
+      enabled: true
+      href: "https://ai.vali.tcp-workshop.iits.tech/"
+      imgSrc: ""
+      imgAlt: "AI"
+      category: "DevOps"
+      description: "AI"
     harbor:
       enabled: true
       href: "harbor/"
