@@ -38,6 +38,10 @@ charts:
     parameters:
       ingress.kibana.host: "admin.{{.Values.projectValues.stageDomain}}"
 
+  gpu-llm:
+    namespace: ai
+    path: "local-charts/gpu-llm"
+
 #   Remote chart from public helm repo
 #  bitnami-kafka:
 #    namespace: bitnami-kafka # Which namespace should the service be deployed
