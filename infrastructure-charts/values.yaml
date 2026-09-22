@@ -32,6 +32,12 @@ charts:
     parameters:
       "kafka.replicaCount": "1"
 
+  elastic-operator:
+    namespace: monitoring
+    targetRevision: 9.0.5-bitnamilegacy
+    parameters:
+      ingress.kibana.host: "admin.{{.Values.projectValues.stageDomain}}"
+
 #   Remote chart from public helm repo
 #  bitnami-kafka:
 #    namespace: bitnami-kafka # Which namespace should the service be deployed
@@ -49,8 +55,3 @@ charts:
     valueFile: "value-files/akhq/values.yaml"
   # Override values with local values file
 
-  elastic-operator:
-    namespace: monitoring
-    targetRevision: 9.0.5-bitnamilegacy
-    parameters:
-      ingress.kibana.host: "admin.{{.Values.projectValues.stageDomain}}"
