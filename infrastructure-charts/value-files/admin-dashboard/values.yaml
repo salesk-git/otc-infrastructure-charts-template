@@ -21,7 +21,7 @@ defaultDashboard:
 
     # Not deployed by this blueprint
     kibana:
-      enabled: false
+      enabled: true
     grafana:
       enabled: false
     prometheus:
