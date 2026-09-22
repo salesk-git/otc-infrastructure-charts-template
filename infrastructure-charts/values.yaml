@@ -41,6 +41,9 @@ charts:
   gpu-llm:
     namespace: ai
     path: "local-charts/gpu-llm"
+    parameters:
+      model: "llama3.2:3b"
+
 
 #   Remote chart from public helm repo
 #  bitnami-kafka:
